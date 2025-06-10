@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1><center>FOOD DONATION FORM</center></h1>
+    
+    <form action="form_response.html" method="get">
+        <ol>
+
+            <li>
+                <h2>DONOR INFORMATION</h2>
+                <ul>
+                    <li>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" value="" placeholder="your name here" required>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <label for="phone">Number: </label>
+                        <input type="number" id="phone" value="" placeholder="your Number here" required>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <label for="pass">Password: </label>
+                        <input type="password" id="pass" name="passw" value="" placeholder="password" required>
+                    </li>
+                    <br/>
+
+                    <li>
+                        <label for="mail">EMail: </label>
+                        <input type="mail" id="mail" name="mail" placeholder="user@gmail.com" required>
+                    </li>
+
+                
+                </ul>
+          </li>
+          <br/><br/>
+        
+            <li><h2>FOOD INFORMATION</h2>
+
+                <ul>
+
+                    <li>
+                        <label for="fname"><h3>About Food:</h3> </label><br>
+                        <textarea rows="5" cols="100"></textarea>
+                    </li>
+
+                    <li>
+                        <h3>Food Preparation</h3>
+                        <input type="radio" id="ftyped" value="cooked to donate" name="ft">
+                        <label for="ftyped">Cooked to donate </label>
+                        
+                        <input type="radio" id="ftypel" value="left over food" name="ft">
+                        <label for="ftypel">Left over food </label>
+                        
+                    </li>
+
+                    <li>
+                        <h3>Food Items</h3>
+                        
+                        <input type="checkbox" id="rice" >
+                        <label for="rice">Rice Items</label><br/>
+
+                        <input type="checkbox" id="curry" >
+                        <label for="curry">Curries</label><br/>
+                        
+                        <input type="checkbox" id="snacks" >
+                        <label for="snacks">Snack Items</label><br/>
+                        
+                        <input type="checkbox" id="fluids" >
+                        <label for="fluids">Fluid Items</label><br/>
+                        
+                    </li>
+
+                    <li>
+                        <label for="Food time"><h3>Food Time</h3></label>
+                        <select id="Food time">
+                            <option value="fresh">1-5 hours</option>
+                            <option value="medium">6-10 hours</option>
+                            <option value="worst">Above 10 hours</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="date"><h3>Food cooked at:</h3> </label>
+                        <input type="datetime-local" id="date">
+                    </li>
+                    
+                
+                    <li>
+                        <label for ="proof"><h3>ID Proof</h3></label>
+                        <input type="file" id="proof">
+                    </li>
+
+                    <li>
+                        <label for ="ttodel"><h3>Rate Food<h3></label>
+                        <input type="range" id ="ttodel">
+                    </li> 
+        
+                </ul>
+            </li>
+
+        
+        <input type="submit" value="submit">
+        
+        </ol>
+       </form>
+       </center>
+</body>
+</html>
